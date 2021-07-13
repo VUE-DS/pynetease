@@ -13,7 +13,7 @@
 6. 登陆网易云、签到
 ## 使用截图
 ![主界面](https://github.com/SwaggyMacro/pynetease/blob/main/example/ZE%60XTKBSC3%7DDYURW3%24QTV35.png)  
-![主界面2](https://github.com/SwaggyMacro/pynetease/blob/main/example/3WSDZL4XVJE%40EA%5DO~(5~SW7.png)  
+![主界面2](https://github.com/SwaggyMacro/pynetease/blob/main/example/3WSDZL4XVJE%40EA%5DO~\(5~SW7.png)  
 ![歌单界面](https://github.com/SwaggyMacro/pynetease/blob/main/example/%24N44E%40%60%5B3WFQR5H6NA56CFB.png)  
 ![歌词界面](https://github.com/SwaggyMacro/pynetease/blob/main/example/5V1E%7DBQGIH0%5BASH0%7DK%608QYP.png)  
 ![登陆界面](https://github.com/SwaggyMacro/pynetease/blob/main/example/~1XSJ73B7BUXKL0YA8T3W_A.png)
