@@ -1,0 +1,16 @@
+<RCC>
+  <qresource prefix="pic">
+    <file>images/close_black0.png</file>
+    <file>images/login_phone.png</file>
+    <file>images/phone_icon.png</file>
+    <file>images/locker_icon.png</file>
+    <file>images/163_hover_icon.png</file>
+    <file>images/163_icon.png</file>
+    <file>images/qq_hover_icon.png</file>
+    <file>images/qq_icon.png</file>
+    <file>images/weibo_hover_icon.png</file>
+    <file>images/weibo_icon.png</file>
+    <file>images/wechat_icon.png</file>
+    <file>images/wechat_hover_icon.png</file>
+  </qresource>
+</RCC>

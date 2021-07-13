@@ -1,0 +1,16 @@
+<RCC>
+  <qresource prefix="png">
+    <file>images/left_logo.png</file>
+    <file>images/search_ico.png</file>
+    <file>images/album_default.jpg</file>
+    <file>images/play_button.png</file>
+    <file>images/last_song.png</file>
+    <file>images/last_song_pressed.png</file>
+    <file>images/avatar.png</file>
+    <file>images/nouser.jpg</file>
+    <file>images/next_song.png</file>
+    <file>images/next_song_pressed.png</file>
+    <file>images/pausebutton.png</file>
+    <file>images/vip4.png</file>
+  </qresource>
+</RCC>

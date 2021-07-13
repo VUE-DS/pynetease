@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1019</width>
+    <height>659</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Dialog {
+	background-color: rgb(0, 0, 0);
+}
+#widget {
+	background-color: rgb(255, 255, 255);
+	border-radius: 20px;
+}
+#closeButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+#closeButton:hover {
+	color: white;
+	background-color: rgb(232, 16, 16);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">border-radius:0px;</string>
+     </property>
+     <widget class="QPushButton" name="button_play">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>579</y>
+        <width>35</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#button_play{
+	background-color: rgba(125, 125, 125, 30);
+	border-radius:17px;
+	background-image: url(:/png/images/play_button.png);
+}
+QPushButton#button_play:hover{
+	background-color: rgba(125, 125, 125, 50);
+};</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_minimize">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>20</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>一</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_song_name_2">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>604</y>
+        <width>161</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;微软雅黑&quot;;
+color: rgb(77, 77, 77);</string>
+      </property>
+      <property name="text">
+       <string>24kGoldn / iann dior</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>23</y>
+        <width>35</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="test.qrc">:/png/images/vip4.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_search_icon">
+      <property name="geometry">
+       <rect>
+        <x>279</x>
+        <y>23</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="test.qrc">:/png/images/search_ico.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_next_song">
+      <property name="geometry">
+       <rect>
+        <x>538</x>
+        <y>583</y>
+        <width>25</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#button_next_song{
+	background-color: rgba(0, 0, 0, 0);
+	background-image: url(:/png/images/next_song.png);
+}
+QPushButton#button_next_song:hover{
+	background-image: url(:/png/images/next_song_pressed.png);
+};</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_top_avatar">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>11</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>:/png/images/avatar.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QSlider" name="slider_progress">
+      <property name="geometry">
+       <rect>
+        <x>308</x>
+        <y>613</y>
+        <width>411</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QSlider::handle:horizontal{width:6px;height:6px;background-color:rgb(57, 175, 234);margin:-2px 0px -2px 0px;border-radius:3px;}
+QSlider::groove:horizontal{height:3px;background-color:rgb(219,219,219);}
+QSlider::add-page:horizontal{background-color:rgb(219,219,219);}
+QSlider::sub-page:horizontal{background-color:rgb(57, 175, 234);}</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_song_name">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>582</y>
+        <width>161</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;微软雅黑&quot;;
+color: rgb(77, 77, 77);</string>
+      </property>
+      <property name="text">
+       <string>Mood </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_main_bg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>59</y>
+        <width>1001</width>
+        <height>581</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255,255,255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_left_logo">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-1</y>
+        <width>191</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/png/images/left_logo.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>14</x>
+        <y>575</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:10px;
+background-image: url(:/png/images/album_default.jpg);
+background-size:100% 100%;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>299</x>
+        <y>22</y>
+        <width>361</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:0px;
+background:rgba(0,0,0,0);
+color:white;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_last_song">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>583</y>
+        <width>25</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#button_last_song{
+	background-color: rgba(0, 0, 0, 0);
+	background-image: url(:/png/images/last_song.png);
+}
+QPushButton#button_last_song:hover{
+	background-image: url(:/png/images/last_song_pressed.png);
+};</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_input_search_bg">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>15</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:15px;
+font: 10pt &quot;微软雅黑&quot;;
+margin left: 10px; 
+background:rgba(235,235,235,0.5);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_progress_left">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>615</y>
+        <width>35</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;微软雅黑&quot;;
+color: rgb(159, 159, 159);</string>
+      </property>
+      <property name="text">
+       <string>00:00</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_top_bg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-1</y>
+        <width>1001</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(57, 175, 234);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_top_id">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>20</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;微软雅黑&quot;;
+color:rgba(255,255,255,0.9);</string>
+      </property>
+      <property name="text">
+       <string>Swaggy-Macro</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_progress_right">
+      <property name="geometry">
+       <rect>
+        <x>727</x>
+        <y>615</y>
+        <width>35</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;微软雅黑&quot;;
+color: rgb(159, 159, 159);</string>
+      </property>
+      <property name="text">
+       <string>00:00</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_close">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>19</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>×</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>69</y>
+        <width>981</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>音乐标题</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>歌手</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>专辑</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>时长</string>
+       </property>
+      </column>
+     </widget>
+     <zorder>label_top_bg</zorder>
+     <zorder>label_input_search_bg</zorder>
+     <zorder>label_main_bg</zorder>
+     <zorder>button_play</zorder>
+     <zorder>label_minimize</zorder>
+     <zorder>label_song_name_2</zorder>
+     <zorder>label</zorder>
+     <zorder>label_search_icon</zorder>
+     <zorder>button_next_song</zorder>
+     <zorder>label_top_avatar</zorder>
+     <zorder>slider_progress</zorder>
+     <zorder>label_song_name</zorder>
+     <zorder>label_left_logo</zorder>
+     <zorder>label_2</zorder>
+     <zorder>lineEdit</zorder>
+     <zorder>button_last_song</zorder>
+     <zorder>label_progress_left</zorder>
+     <zorder>label_top_id</zorder>
+     <zorder>label_progress_right</zorder>
+     <zorder>label_close</zorder>
+     <zorder>tableWidget</zorder>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="test.qrc"/>
+  <include location="test.qrc"/>
+ </resources>
+ <connections/>
+</ui>

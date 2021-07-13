@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="pic">
+    <file>images/last_song.png</file>
+    <file>images/login.ico</file>
+    <file>images/logout_icon.png</file>
+    <file>images/next_song.png</file>
+    <file>images/connect_icon.png</file>
+    <file>images/vipcenter_icon.png</file>
+    <file>images/play_button.png</file>
+  </qresource>
+</RCC>

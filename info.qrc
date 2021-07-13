@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="pic">
+    <file>images/connect_icon.png</file>
+    <file>images/info_icon.png</file>
+    <file>images/logout_icon.png</file>
+    <file>images/vipcenter_icon.png</file>
+    <file>images/grade_icon.png</file>
+    <file>images/mall_icon.png</file>
+    <file>images/signicon.png</file>
+  </qresource>
+</RCC>

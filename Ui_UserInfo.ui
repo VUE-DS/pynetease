@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>297</width>
+    <height>458</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Dialog {
+	background-color: rgb(0, 0, 0);
+}
+#widget {
+	background-color: rgb(255, 255, 255);
+	border-radius: 20px;
+}
+#closeButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+#closeButton:hover {
+	color: white;
+	background-color: rgb(232, 16, 16);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">border-radius:7px;</string>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>50</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;微软雅黑&quot;;
+color: rgb(103, 103, 103);</string>
+      </property>
+      <property name="text">
+       <string>动态</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>129</x>
+        <y>50</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;微软雅黑&quot;;
+color: rgb(103, 103, 103);</string>
+      </property>
+      <property name="text">
+       <string>关注</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;微软雅黑&quot;;
+color: rgb(103, 103, 103);</string>
+      </property>
+      <property name="text">
+       <string>粉丝</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_news">
+      <property name="geometry">
+       <rect>
+        <x>42</x>
+        <y>29</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_follow">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>29</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_followers">
+      <property name="geometry">
+       <rect>
+        <x>201</x>
+        <y>29</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_sign">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>90</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#button_sign{
+border-radius:15px;
+color: rgb(51, 51, 51);
+font: 11pt &quot;微软雅黑&quot;;
+border:1px solid;
+border-color: rgb(216, 216, 216);
+qproperty-icon: url(:/pic/images/signicon.png) off, url(:/pic/images/signicon.png) on;
+}
+QPushButton#button_sign:hover{
+background-color: rgb(243, 243, 243);
+}</string>
+      </property>
+      <property name="text">
+       <string>签到</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_line">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>140</y>
+        <width>281</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;微软雅黑&quot;;
+color: rgb(103, 103, 103);
+border:1px solid;
+border-color: rgb(237, 237, 237);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_vipcenter">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>150</y>
+        <width>281</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#button_vipcenter{
+border-radius:0px;
+font: 10pt &quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);
+qproperty-icon: url(:/pic/images/vipcenter_icon.png) off, url(:/pic/images/vipcenter_icon.png) on;
+}
+QPushButton#button_vipcenter:hover{
+background-color: rgb(240, 241, 242);
+}</string>
+      </property>
+      <property name="text">
+       <string>会员中心                                      </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>157</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_grade">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>190</y>
+        <width>281</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#button_grade{
+border-radius:0px;
+font: 10pt &quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);
+qproperty-icon: url(:/pic/images/grade_icon.png) off, url(:/pic/images/grade_icon.png) on;
+}
+QPushButton#button_grade:hover{
+background-color: rgb(240, 241, 242);
+}</string>
+      </property>
+      <property name="text">
+       <string>等级                                             </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_mall">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>230</y>
+        <width>281</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#button_mall{
+border-radius:0px;
+font: 10pt &quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);
+qproperty-icon: url(:/pic/images/mall_icon.png) off, url(:/pic/images/mall_icon.png) on;
+}
+QPushButton#button_mall:hover{
+background-color: rgb(240, 241, 242);
+}</string>
+      </property>
+      <property name="text">
+       <string>商城                                             </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_line_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>277</y>
+        <width>281</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;微软雅黑&quot;;
+color: rgb(103, 103, 103);
+border:1px solid;
+border-color: rgb(237, 237, 237);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_info">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>290</y>
+        <width>281</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#button_info{
+border-radius:0px;
+font: 10pt &quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);
+qproperty-icon: url(:/pic/images/info_icon.png) off, url(:/pic/images/info_icon.png) on;
+}
+QPushButton#button_info:hover{
+background-color: rgb(240, 241, 242);
+}</string>
+      </property>
+      <property name="text">
+       <string>个人信息设置                                </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_connect">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>330</y>
+        <width>281</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#button_connect{
+border-radius:0px;
+font: 10pt &quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);
+qproperty-icon: url(:/pic/images/connect_icon.png) off, url(:/pic/images/connect_icon.png) on;
+}
+QPushButton#button_connect:hover{
+background-color: rgb(240, 241, 242);
+}</string>
+      </property>
+      <property name="text">
+       <string>绑定社交账号                                </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_line_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>380</y>
+        <width>281</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;微软雅黑&quot;;
+color: rgb(103, 103, 103);
+border:1px solid;
+border-color: rgb(237, 237, 237);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_logout">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>390</y>
+        <width>281</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#button_logout{
+border-radius:0px;
+font: 10pt &quot;微软雅黑&quot;;
+color: rgb(51, 51, 51);
+qproperty-icon: url(:/pic/images/logout_icon.png) off, url(:/pic/images/logout_icon.png) on;
+}
+QPushButton#button_logout:hover{
+background-color: rgb(240, 241, 242);
+}</string>
+      </property>
+      <property name="text">
+       <string>退出登录                                      </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>199</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>239</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>299</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>338</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="info.qrc"/>
+ </resources>
+ <connections/>
+</ui>
